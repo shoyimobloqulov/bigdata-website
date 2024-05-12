@@ -6,6 +6,7 @@ import "@/assets/custom/crbase6067/css/style.css"
 import "@/assets/custom/crbase6067/css/style23.css"
 import "@/assets/custom/crbase6067/css/style23.css"
 
+import "@/assets/ajax/jquery.min.js"
 import "@/assets/custom/crbase6067/js/jquery.form.min.js"
 import "@/assets/ajax/jquery-ui.min.js"
 import "@/assets/js/timepicker.js"
