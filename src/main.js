@@ -6,18 +6,6 @@ import "@/assets/custom/crbase6067/css/style.css"
 import "@/assets/custom/crbase6067/css/style23.css"
 import "@/assets/custom/crbase6067/css/style23.css"
 
-import "@/assets/ajax/jquery.min.js"
-import "@/assets/custom/crbase6067/js/jquery.form.min.js"
-import "@/assets/ajax/jquery-ui.min.js"
-import "@/assets/js/timepicker.js"
-import "@/assets/js/main.js"
-import "@/assets/js/jquery.scrollTo.min.js"
-import "@/assets/cache/js/5e4e2909561de2f2b36e4932355737d0.js"
-import "@/assets/js/jquery.touchSwipe.min.js"
-import "@/assets/custom/crbase6067/js/chosen.jquery.min.js"
-import "@/assets/custom/crbase6067/js/jquery.fancybox.min.js"
-import "@/assets/custom/crbase6067/js/custom.js"
-
 import { createApp } from 'vue'
 import App from './components/App.vue'
 import router from './router'

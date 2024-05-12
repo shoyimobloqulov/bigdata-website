@@ -10,16 +10,15 @@
     <div id="app"></div>
 
     <script type="module" src="/src/main.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="https://bigdata.confreg.org/custom/crbase6067/js/jquery.form.min.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="https://bigdata.confreg.org/js/timepicker.js" charset="UTF-8"></script><script type="text/javascript">
         jQuery(function(e){
             e.datepicker.setDefaults(e.datepicker.regional["ru"]);
             e.timepicker.setDefaults(e.timepicker.regional["ru"]);
         });
     </script>
-
     <script type="text/javascript" src="https://bigdata.confreg.org/js/jquery.scrollTo.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="https://bigdata.confreg.org/cache/js/5e4e2909561de2f2b36e4932355737d0.js" charset="UTF-8"></script>
     <script type="text/javascript"  src="https://bigdata.confreg.org/js/jquery.touchSwipe.min.js" charset="UTF-8"></script>
@@ -28,6 +27,13 @@
     <script src="https://bigdata.confreg.org/custom/crbase6067/js/chosen.jquery.min.js"></script>
     <script src="https://bigdata.confreg.org/custom/crbase6067/js/jquery.fancybox.min.js" ></script>
     <script src="https://bigdata.confreg.org/custom/crbase6067/js/custom.js"></script>
-
+    <script type="text/javascript" asyncsrc="https://bigdata.confreg.org/js/main.js" charset="UTF-8"></script>
+    <div class="privacy_policy">Мы используем файлы cookie для персонализации и повышения удобства использования нашего сайта. Цели использования файлов cookie определены в <a href="https://trialogue-org.ru/userfiles/ufiles/politika_obrabotki_personaljnyh_dannyh_trialog_01.11.2023.pdf" target="_blank">Политике в отношении обработки персональных данных</a>. Если Вы согласны и дальше использовать файлы cookie, пожалуйста, нажмите кнопку «Принять». <span class="button" onclick="privacy_close()">Принять</span></div>
+    <script language="javascript" type="text/javascript">
+        function privacy_close() {
+            diafan_cookie.set("privacy_policy", "1", {expires:9223372036854775807, path:"/", domain:"bigdata.confreg.org"});
+            $(".privacy_policy").remove();
+        }
+    </script>
   </body>
 </html>
