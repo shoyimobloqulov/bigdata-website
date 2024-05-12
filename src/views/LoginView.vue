@@ -1,9 +1,18 @@
 <script setup>
 
+import Top from "@/components/Layout/Top.vue";
+import Footer from "@/components/Home/Footer.vue";
+import Login from "@/components/Login.vue";
+
 </script>
 
 <template>
-  <h2>Login</h2>
+  <main>
+    <Top />
+    <Login />
+  </main>
+
+  <Footer />
 </template>
 
 <style scoped>

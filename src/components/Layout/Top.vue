@@ -1,16 +1,17 @@
 <script>
-  import logo_lk_23_2 from "@/assets/libs/img/logo_lk_23_2.png"
-  import sechenov_lk_23 from "@/assets/libs/img/sechenov_lk_23.png"
-  import pic_lk_23 from "@/assets/libs/img/pic_lk_23.svg"
-  export default {
-    data:function () {
-      return {
-        logo_lk_23_2: logo_lk_23_2,
-        sechenov_lk_23: sechenov_lk_23,
-        pic_lk_23: pic_lk_23
-      }
+import logo_lk_23_2 from "@/assets/libs/img/logo_lk_23_2.png"
+import sechenov_lk_23 from "@/assets/libs/img/sechenov_lk_23.png"
+import pic_lk_23 from "@/assets/libs/img/pic_lk_23.svg"
+
+export default {
+  data: function () {
+    return {
+      logo_lk_23_2: logo_lk_23_2,
+      sechenov_lk_23: sechenov_lk_23,
+      pic_lk_23: pic_lk_23
     }
   }
+}
 </script>
 
 <template>
