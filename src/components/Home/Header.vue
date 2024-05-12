@@ -61,7 +61,7 @@
           <RouterLink class="btn23" to="/registration">РЕГИСТРАЦИЯ</RouterLink>
         </div>
         <div class="lk_btn">
-          <RouterLink class="btn23" to="/lichnyy-kabinet">Личный кабинет</RouterLink>
+          <RouterLink class="btn23" to="/login">Личный кабинет</RouterLink>
         </div>
       </div>
     </div>

@@ -42,9 +42,9 @@ export default {
             <li class="nav-item menu__parent"><a href="../#lektory23" class="first">Лекторы</a></li>
             <li class="nav-item menu__parent"><a href="../#kontakty23" class="first">Контакты</a></li>
             <li class="nav-item menu__parent lk_item">
-              <a href="index.html" class="first" title="Личный кабинет">
+              <RouterLink to="/login" class="first" title="Личный кабинет">
                 <img :src="pic_lk_23" width="34" alt="Личный кабинет">
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </div>

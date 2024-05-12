@@ -29,7 +29,7 @@ export default {
         </div>
       </div>
       <div class="mb10">Прохождение регистрации является Вашим согласием с условиями, указанными в документах</div>
-      <div>Если Вы уже зарегистрированы, пожалуйста, пройдите в&nbsp;<RouterLink to="/lichnyy-kabinet">Личный&nbsp;кабинет</RouterLink>
+      <div>Если Вы уже зарегистрированы, пожалуйста, пройдите в&nbsp;<RouterLink to="/login">Личный&nbsp;кабинет</RouterLink>
       </div>
       <hr>
       <form action="#" method="POST" class="js_registration_form registration_form ajax" enctype="multipart/form-data">
