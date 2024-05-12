@@ -27,3 +27,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Public Link
+```url
+https://bigdata-website.vercel.app/
+```

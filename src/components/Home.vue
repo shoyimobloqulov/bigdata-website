@@ -4,8 +4,9 @@
   import Target from "@/components/Home/Target.vue";
   import Landing from "@/components/Home/Landing.vue";
   import Summer from "@/components/Home/Summer.vue";
+  import Programma from "@/components/Home/Programma.vue";
   export default {
-    components: {Summer, Landing, Target, About, Header},
+    components: {Programma, Summer, Landing, Target, About, Header},
     data: function (){
       return {
       }
@@ -18,6 +19,7 @@
   <About />
   <Target />
   <Landing />
+  <Programma />
   <Summer />
 </template>
 
