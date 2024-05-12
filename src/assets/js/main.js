@@ -1,3 +1,5 @@
+import jQuery from 'jquery';
+
 jQuery(function(e){
     e.datepicker.setDefaults(e.datepicker.regional["ru"]);
     e.timepicker.setDefaults(e.timepicker.regional["ru"]);
