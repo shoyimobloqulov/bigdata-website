@@ -17,16 +17,7 @@ const router = createRouter({
       name: "Ro'yhatga olish",
       component: RegisterView
     },
-    {
-      path: '/lichnyy-kabinet',
-      name: "Tizimga kirish",
-      component: LoginView
-    },
-    {
-      path: '/reminding',
-      name: "Yangilash",
-      component: RemendingView
-    }
+
   ]
 })
 
