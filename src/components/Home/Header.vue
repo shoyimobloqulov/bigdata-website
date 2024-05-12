@@ -29,16 +29,18 @@
           <div class="nav_wrap">
             <div class="menu navbar-collapse flex-sm-row collapse show" id="navBar" data-mobile-scroll-hide="true">
               <ul class="navbar-nav" id="js-scroll-nav">
-                <li class="nav-item menu__parent current"><a href="index.html#head23" class="first">Главная</a></li>
-                <li class="nav-item menu__parent"><a href="index.html#cel23" class="first">Цель</a></li>
-                <li class="nav-item menu__parent"><a href="index.html#struct23" class="first">Структура</a></li>
-                <li class="nav-item menu__parent"><a href="index.html#mesto23" class="first">Площадка</a></li>
-                <li class="nav-item menu__parent"><a href="index.html#programma23" class="first">Программа</a></li>
-                <li class="nav-item menu__parent"><a href="index.html#lektory23" class="first">Лекторы</a></li>
-                <li class="nav-item menu__parent"><a href="index.html#kontakty23" class="first">Контакты</a></li>
-                <li class="nav-item menu__parent lk_item"><a href="lichnyy-kabinet/index.html" class="first" title="Личный кабинет">
-                  <img :src="pic_lk_23" width="34" alt="Личный кабинет">
-                </a></li>
+                <li class="nav-item menu__parent current"><a href="#head23" class="first">Главная</a></li>
+                <li class="nav-item menu__parent"><a href="#cel23" class="first">Цель</a></li>
+                <li class="nav-item menu__parent"><a href="#struct23" class="first">Структура</a></li>
+                <li class="nav-item menu__parent"><a href="#mesto23" class="first">Площадка</a></li>
+                <li class="nav-item menu__parent"><a href="#programma23" class="first">Программа</a></li>
+                <li class="nav-item menu__parent"><a href="#lektory23" class="first">Лекторы</a></li>
+                <li class="nav-item menu__parent"><a href="#kontakty23" class="first">Контакты</a></li>
+                <li class="nav-item menu__parent lk_item">
+                  <a href="lichnyy-kabinet/" class="first" title="Личный кабинет">
+                    <img :src="pic_lk_23" width="34" alt="Личный кабинет">
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
