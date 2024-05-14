@@ -24,14 +24,6 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: "8.1"
-          extensions: mbstring, intl, gd, xml, zip, dom, curl, fileinfo, json, mysqli, pdo_mysql, soap, xml, xmlreader, xmlwriter, xsl, zip, bcmath, exif, iconv, imagick, opcache, pcntl, pdo, pdo_sqlite, phar, posix, readline, sqlite3, tokenizer, xml, xsl, zip, zlib
-          coverage: none
-          tools: composer:v2
       - name: Upload to server
         uses: appleboy/scp-action@master
         with:
@@ -39,5 +31,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           source: "."
-          target: ${{ secrets.TARGET }}
+          port: ${{ secrets.TARGET }}
           strip_components: 1
