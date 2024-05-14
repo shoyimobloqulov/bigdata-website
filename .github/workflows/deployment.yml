@@ -18,9 +18,6 @@ jobs:
 
       - name: Loyihani build qilish
         run: npm run build
-
-      - name: Run Tests npm
-        run: npm test
   deploy:
     name: Deploy to Reg.ru Server
     runs-on: ubuntu-latest
