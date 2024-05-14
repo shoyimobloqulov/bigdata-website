@@ -24,13 +24,16 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main'
     steps:
-    - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        host: ${{ secrets.HOST }}
+        server: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        source: "."
+        local-dir: "./"
         port: ${{ secrets.TARGET }}
         strip_components: 1
         timeout: 30s
