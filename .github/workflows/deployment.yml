@@ -32,8 +32,6 @@ jobs:
           extensions: mbstring, intl, gd, xml, zip, dom, curl, fileinfo, json, mysqli, pdo_mysql, soap, xml, xmlreader, xmlwriter, xsl, zip, bcmath, exif, iconv, imagick, opcache, pcntl, pdo, pdo_sqlite, phar, posix, readline, sqlite3, tokenizer, xml, xsl, zip, zlib
           coverage: none
           tools: composer:v2
-      - name: Install dependencies
-        run: composer dump-autoload --optimize
       - name: Upload to server
         uses: appleboy/scp-action@master
         with:
