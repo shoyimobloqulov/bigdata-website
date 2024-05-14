@@ -1,49 +1,29 @@
-name: CI/CD to Reg.ru Server
-
-on:
-  push:
-    branches:
-      - main
+on: push
+name: 🚀 Deploy website on push
 jobs:
-  build:
-    name: Build va Test
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
 
-      - name: Npm ni yangilash
-        run: npm install
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
 
-      - name: Loyihani build qilish
-        run: npm run build
-  deploy:
-    name: Deploy to Reg.ru Server
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/main'
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
+      - name: 🔨 Build Project
+        run: |
+          npm install
+          npm run build
 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        local-dir: "./"
-        port: ${{ secrets.TARGET }}
-        strip_components: 1
-        timeout: 30s
-        command_timeout: 10m
-        use_insecure_cipher: false
-        rm: false
-        debug: false
-        overwrite: false
-        tar_dereference: false
-        tar_exec: tar
-        proxy_port: 22
-        proxy_timeout: 30s
-        proxy_use_insecure_cipher: false
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          protocol: ftp
+          port: ${{ secrets.PORT }}
+
